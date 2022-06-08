@@ -1,0 +1,886 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jura', sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    padding: 25px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h4 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.main-photo {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    li {
+        padding: 25px;
+        color: #006AA7;
+        .nav1 {
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: underline;
+            transition: 2s;
+        }
+    }
+}
+
+.zagolovok {
+    margin-top: 200px;
+    height: 300px;
+}
+
+.banner-texts {
+    padding-bottom: 15px;
+}
+
+.header-button {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    background: #006AA7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    &:hover {
+        background-color: #024D79;
+    }
+}
+
+.past {
+    background: #F5F5F5;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.pass {
+    text-align: center;
+    padding: 15px;
+}
+
+.cards-past {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    padding: 50px;
+    column-gap: 15px;
+}
+
+.card-past {
+    height: 220px;
+    background: white;
+    margin: 0 auto;
+    padding: 10px;
+    &:hover {
+        background: #006AA7;
+        color: white;
+        transition: 0.5s;
+    }
+}
+
+.link-past {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    p {
+        align-self: center;
+        margin-right: 15px;
+    }
+}
+
+.cards-ukraine {
+    display: grid;
+    grid-template-columns: 50% 24% 24%;
+    column-gap: 15px;
+    grid-template-rows: 80% 30%;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.card-ukraine {
+    background: lightgrey;
+    border: 1px solid black;
+    padding: 15px;
+    &:hover {
+        background: #006AA7;
+        color: white;
+        transition: 0.5s;
+    }
+}
+
+.kozak-button {
+    margin-top: 15px;
+    border: 1px solid black;
+    background: #F9C00D;
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    width: 140px;
+    height: 25px;
+    text-align: center;
+    &:hover {
+        background: #BD930A;
+        transition: 0.5s;
+    }
+}
+
+.kozak-block {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 50% 50%;
+    background: #006AA7;
+    color: white;
+}
+
+.to-sky {
+    background: #F9C00D;
+}
+
+.sky-info-img {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 50% 50%;
+    padding: 20px;
+}
+
+.sky-info {
+    display: grid;
+    grid-template-rows: 30% 30% 30%;
+    font-size: 20px;
+}
+
+.sky-button {
+    border: 1px solid black;
+    background: #F9C00D;
+    margin-top: 50px;
+    border-radius: 10px;
+    padding: 15px;
+    color: black;
+    text-decoration: none;
+    width: 140px;
+    height: 25px;
+    text-align: center;
+    &:hover {
+        background: #BD930A;
+        transition: 0.5s;
+    }
+}
+
+.blocks-today {
+    display: grid;
+    grid-template-columns: 24% 25% 25% 24%;
+    column-gap: 10px;
+}
+
+.block-text {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    height: 150px;
+}
+
+.text_today {
+    font-size: 16px;
+}
+
+.gallery_today {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    img {
+        margin: 0 auto;
+    }
+}
+
+.zelenskii {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 60%;
+    background: #006AA7;
+    color: white;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 30px;
+    padding: 20px;
+    align-items: center;
+    img {
+        border-radius: 100%;
+    }
+}
+
+.blocks_dijital {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    row-gap: 15px;
+    column-gap: 20px;
+    img {
+        grid-row: 1/3;
+    }
+    p {
+        grid-row: 1/3;
+    }
+}
+
+.block-dijital {
+    background: #F9C00D;
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+}
+
+.future {
+    background-color: #F5F5F5;
+    width: 100%;
+    padding: 15px;
+}
+
+.future_Ukraine {
+    display: grid;
+    grid-template-columns: 32% 15% 15% 32%;
+    column-gap: 30px;
+    row-gap: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.block_future2 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+}
+
+.block_future3 {
+    grid-column: 4/5;
+}
+
+.block_future4 {
+    grid-column: 1/3;
+}
+
+.block_future5 {
+    grid-column: 3/5;
+}
+
+.block_future {
+    background: white;
+    padding: 15px;
+    height: 150px;
+    height: 230px;
+    &:hover {
+        background: #006AA7;
+        color: white;
+        transition: 0.5s;
+    }
+}
+
+.th2_blocks {
+    display: grid;
+    grid-template-columns: 32% 15% 15% 32%;
+    column-gap: 30px;
+    font-size: 16px;
+    grid-column: 1/5;
+}
+
+.Ukranians {
+    display: grid;
+    grid-template-columns: 50% 49%;
+    grid-template-rows: 33% 33% 33%;
+    width: 100%;
+    height: 500px;
+    column-gap: 5px;
+    row-gap: 15px;
+}
+
+.ukrainian {
+    background: white;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 50% 50%;
+    padding: 25px;
+    img {
+        border-radius: 100%;
+        align-self: center;
+    }
+}
+
+.galery3 {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    column-gap: 25px;
+    img {
+        margin: 0 auto;
+    }
+}
+
+.text_ukr {
+    align-self: center;
+}
+
+footer {
+    background: #006AA7;
+    color: white;
+    margin-top: 50px;
+}
+
+.ukraine-text {
+    display: flex;
+    margin: 0 auto;
+    width: 23%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    .main-photo {
+        width: 350px;
+        height: 450px;
+    }
+    .banner-texts {
+        font-size: 15px;
+    }
+    nav {
+        img {
+            width: 60px;
+            height: 75px;
+        }
+    }
+    .nav1 {
+        font-size: 13px;
+    }
+    .cards-past {
+        padding: 10px;
+    }
+    .kozak-block {
+        img {
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+    }
+    .text-element-history {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .sky-info {
+        grid-column: 1/3;
+    }
+    .sky-info-img {
+        img {
+            grid-column: 1/3;
+            grid-row: 1/1;
+            height: 200px;
+        }
+    }
+    .zelenskii {
+        width: 100%;
+    }
+    .blocks_dijital {
+        grid-template-columns: 32% 33% 32%;
+        img {
+            grid-row: 1/2;
+        }
+        p {
+            grid-row: 1/3;
+        }
+    }
+    .block-dijital {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+        p {
+            grid-row: 2/3;
+            grid-column: 1/3;
+            font-size: 14px;
+        }
+    }
+    .ukraine-text {
+        width: 50%;
+    }
+    .blocks-today {
+        row-gap: 10px;
+    }
+    .cards-past {
+        grid-template-columns: 24% 24% 24% 24%;
+        row-gap: 10px;
+        column-gap: 5px;
+    }
+    .today-block1,
+    .card-past1,
+    .gal3-img1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .today-block2,
+    .card-past2,
+    .gal3-img2 {
+        grid-column: 3/5;
+        grid-row: 1/2;
+    }
+    .today-block3,
+    .card-past3,
+    .gal3-img3 {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    .today-block4,
+    .card-past4,
+    .gal3-img4 {
+        grid-column: 3/5;
+        grid-row: 2/3;
+    }
+    .gallery_today {
+        grid-template-rows: 33% 33% 33%;
+        row-gap: 10px;
+    }
+    .today-img1 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .today-img2 {
+        grid-column: 4/5;
+        grid-row: 1/2;
+    }
+    .today-img3 {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    .today-img4 {
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    .today-img5 {
+        grid-column: 2/5;
+        grid-row: 3/4;
+    }
+    .galery3 {
+        grid-template-rows: 50% 50%;
+        column-gap: 10px;
+    }
+    .Ukranians {
+        grid-template-rows: 200px 200px 200px;
+        row-gap: 55px;
+    }
+    .ukrainian {
+        row-gap: 10px;
+        height: 200px;
+        img {
+            grid-column: 1/3;
+            grid-row: 1/2;
+        }
+    }
+    .text_ukr {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+    footer {
+        margin-top: 300px;
+    }
+    .ukraine-text {
+        img {
+            width: 100px;
+        }
+    }
+    ul {
+        li {
+            padding: 10px;
+            align-self: center;
+        }
+    }
+    .sky-button {
+        margin-top: 50px;
+    }
+    .sky-info {
+        font-size: 17px;
+    }
+    .future_Ukraine {
+        grid-template-columns: 25% 25% 25% 25%;
+        column-gap: 3px;
+    }
+    .block_future1 {
+        grid-column: 1/3;
+        grid-template-rows: 1/2;
+    }
+    .block_future2 {
+        grid-column: 3/5;
+        grid-template-rows: 1/2;
+    }
+    .block_future3 {
+        grid-column: 1/5;
+        grid-template-rows: 2/3;
+    }
+    .th2_blocks {
+        grid-template-columns: 50% 50%;
+        column-gap: 3px;
+    }
+    .block_future4 {
+        grid-column: 1/2;
+        grid-template-rows: 2/3;
+    }
+    .block_future5 {
+        grid-column: 2/3;
+        grid-template-rows: 2/3;
+    }
+}
+
+@media (max-width: 767px) {
+    h1 {
+        text-align: center;
+    }
+    .container {
+        width: 100%;
+    }
+    .ukraine-text {
+        width: 50%;
+        img {
+            width: 1000px;
+        }
+    }
+    .nav1 {
+        color: #F9C00D;
+    }
+    nav {
+        display: block;
+    }
+    header {
+        grid-template-rows: 50% 50%;
+        color: #F9C00D;
+        background: url(../img/sky.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h3 {
+        text-align: center;
+    }
+    .text-header {
+        margin: 0 auto;
+        grid-column: 1/4;
+    }
+    .header-button {
+        margin-left: 100px;
+    }
+    .main-photo {
+        visibility: hidden;
+    }
+    .text-header {
+        margin-top: 0px;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .zagolovok {
+        margin: 0 auto;
+        width: 400px;
+        p {
+            width: 80%;
+            text-align: center;
+        }
+    }
+    h1 {
+        font-weight: bold;
+    }
+    .cards-past {
+        grid-template-rows: 25% 25% 25% 25%;
+        row-gap: 15px;
+        column-gap: 0px;
+    }
+    .card-past1 {
+        grid-row: 1/2;
+        grid-column: 1/5;
+    }
+    .card-past2 {
+        grid-row: 2/3;
+        grid-column: 1/5;
+    }
+    .card-past3 {
+        grid-row: 3/4;
+        grid-column: 1/5;
+    }
+    .card-past4 {
+        grid-row: 4/5;
+        grid-column: 1/5;
+    }
+    .logo {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    .cards-ukraine {
+        grid-template-rows: 33% 33% 33% 20%;
+        row-gap: 15px;
+        margin-bottom: 120px;
+    }
+    .kozak-block {
+        grid-column: 1/4;
+        background: #006AA7;
+        color: white;
+    }
+    .card-ukraine2 {
+        grid-row: 2/3;
+        grid-column: 1/4;
+    }
+    .card-ukraine3 {
+        grid-row: 3/4;
+        grid-column: 1/4;
+    }
+    .sky-info-img {
+        grid-template-rows: 40% 70%;
+        img {
+            grid-column: 1/3;
+            grid-row: 1/2;
+            width: 375px;
+        }
+    }
+    .sky-button {
+        margin-top: 30px;
+    }
+    .sky-info {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        p {
+            font-size: 18px;
+            height: 150px;
+        }
+    }
+    .zelenskii {
+        grid-template-rows: 50% 50%;
+        img {
+            grid-row: 1/2;
+        }
+        p {
+            grid-row: 2/3;
+            grid-column: 1/3;
+            font-size: 20px;
+        }
+    }
+    h3 {
+        font-size: 25px;
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 50px;
+    }
+    .future_Ukraine {
+        grid-template-columns: 32% 32% 20% 15%;
+    }
+    .th2_blocks {
+        grid-template-columns: 32% 15% 22% 15%;
+    }
+    .blocks-today {
+        grid-template-rows: 25% 25% 25% 25%;
+        row-gap: 10px;
+        margin: 0 auto;
+    }
+    .today-block1 {
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+    .today-block2 {
+        grid-column: 1/5;
+        grid-row: 2/3;
+    }
+    .today-block3 {
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .today-block4 {
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
+    .gallery_today {
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        margin: 10px;
+        margin-bottom: 45px;
+    }
+    .today-img1 {
+        grid-column: 1/10;
+        grid-row: 1/2;
+    }
+    .today-img2 {
+        grid-column: 1/10;
+        grid-row: 2/3;
+    }
+    .today-img3 {
+        grid-column: 1/10;
+        grid-row: 3/4;
+    }
+    .today-img4 {
+        grid-column: 1/10;
+        grid-row: 4/5;
+    }
+    .today-img5 {
+        grid-column: 1/10;
+        grid-row: 5/6;
+    }
+    .gallery_today {
+        row-gap: 10px;
+    }
+    .blocks_dijital {
+        grid-template-rows: 16% 16% 16% 16% 16% 16%;
+    }
+    .block-di1,
+    .block-di2,
+    .block-di3,
+    .block-di4,
+    .block-di5,
+    .block-di6 {
+        grid-column: 1/4;
+        img {
+            grid-row: 1/3;
+        }
+    }
+    .block-di1 {
+        grid-row: 1/2;
+    }
+    .block-di2 {
+        grid-row: 2/3;
+    }
+    .block-di3 {
+        grid-row: 3/4;
+    }
+    .block-di4 {
+        grid-row: 4/5;
+    }
+    .block-di5 {
+        grid-row: 5/6;
+    }
+    .block-di6 {
+        grid-row: 6/7;
+    }
+    .future_Ukraine {
+        grid-template-rows: 20% 20% 20% 40%;
+        row-gap: 35px;
+    }
+    .block_future1 {
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+    .block_future2 {
+        grid-row: 2/3;
+        grid-column: 1/4;
+    }
+    .block_future3 {
+        grid-row: 3/4;
+        grid-column: 1/4;
+    }
+    .th2_blocks {
+        grid-template-rows: 50% 50%;
+        row-gap: 35px;
+    }
+    .block_future4 {
+        grid-row: 1/3;
+        grid-column: 1/4;
+    }
+    .block_future5 {
+        grid-row: 2/3;
+        grid-column: 1/4;
+    }
+    .future-h2 {
+        padding-top: 160px;
+    }
+    .galery3 {
+        grid-template-rows: 25% 25% 25% 25%;
+        row-gap: 15px;
+    }
+    .gal3-img1 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+    .gal3-img2 {
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    .gal3-img3 {
+        grid-column: 1/4;
+        grid-row: 3/4;
+    }
+    .gal3-img4 {
+        grid-column: 1/4;
+        grid-row: 4/5;
+    }
+    .Ukran-h2 {
+        padding-top: 50px;
+    }
+    .Ukranians {
+        grid-template-rows: 120px 120px 120px 120px 120px 120px;
+        row-gap: 25px;
+    }
+    .ukrainian {
+        grid-template-columns: 30% 70%;
+        img {
+            grid-row: 1/3;
+        }
+        .text_ukr {
+            grid-row: 1/3;
+            align-self: center;
+        }
+    }
+    .yarik {
+        grid-row: 1/2;
+        grid-column: 1/4;
+    }
+    .bandera {
+        grid-row: 2/3;
+        grid-column: 1/4;
+    }
+    .sviat {
+        grid-row: 3/4;
+        grid-column: 1/4;
+    }
+    .oleks1 {
+        grid-row: 4/5;
+        grid-column: 1/4;
+    }
+    .ivan {
+        grid-row: 5/6;
+        grid-column: 1/4;
+    }
+    .oleks2 {
+        grid-row: 6/7;
+        grid-column: 1/4;
+    }
+    footer {
+        margin-top: 350px;
+        width: 100%;
+    }
+}
